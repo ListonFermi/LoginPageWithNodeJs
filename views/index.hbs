@@ -1,0 +1,19 @@
+<div class="login-form container">
+    <form action="/login" method="POST">
+        <h3>Login Here!</h3>
+        <div class="mb-3">
+          <input type="email" name="email_input" id="" class="form-control" placeholder="Email ID" aria-describedby="helpId" required>
+        </div>
+        <div class="mb-3">
+          <input type="password" name="password_input" id="" class="form-control" placeholder="Password" aria-describedby="helpId" required>
+        </div>
+        {{!-- captcha --}}
+        {{#if invalidCredentials}}
+        <div class="alert alert-danger" role="alert">Enter valid email/password !</div>
+        {{/if}}
+        {{#if loggedout}}
+        <div class="alert alert-success" role="alert">You've been loggedout</div>
+        {{/if}}
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

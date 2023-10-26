@@ -1,0 +1,19 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
+}
+
+a {
+  color: #00B7FF;
+}
+
+.login-form{
+  height: 400px;
+  width: 400px;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  border: solid black 1px;
+  border-radius: 5%;
+}
